@@ -1,9 +1,9 @@
 /// Generated file. Do not edit.
 ///
-/// Locales: 1
+/// Locales: 2
 /// Strings: 397
 ///
-/// Built on 2023-09-30 at 09:59 UTC
+/// Built by local translation sync.
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -22,7 +22,8 @@ const AppLocale _baseLocale = AppLocale.en;
 /// - Locale locale = AppLocale.en.flutterLocale // get flutter locale from enum
 /// - if (LocaleSettings.currentLocale == AppLocale.en) // locale check
 enum AppLocale with BaseAppLocale<AppLocale, _StringsEn> {
-	en(languageCode: 'en', build: _StringsEn.build);
+	en(languageCode: 'en', build: _StringsEn.build),
+	zh(languageCode: 'zh', build: _StringsZh.build);
 
 	const AppLocale({required this.languageCode, this.scriptCode, this.countryCode, required this.build}); // ignore: unused_element
 
@@ -541,38 +542,7 @@ class _StringsEn implements BaseTranslations<AppLocale, _StringsEn> {
 	String get video_unavailable_content => 'Cannot fetch streams. There may be restrictions in place that prevent watching this video.';
 	String get video_file_error => 'Cannot Load File';
 	String get video_file_error_content => 'Unable to load the video file. Please ensure this file exists and is located in a directory accessible by the application.';
-}
 
-// Path: retrying_in
-class _StringsRetryingInEn {
-	_StringsRetryingInEn._(this._root);
-
-	final _StringsEn _root; // ignore: unused_field
-
-	// Translations
-	String seconds({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
-		one: 'Retrying in ${n} second...',
-		other: 'Retrying in ${n} seconds...',
-	);
-}
-
-// Path: view_replies
-class _StringsViewRepliesEn {
-	_StringsViewRepliesEn._(this._root);
-
-	final _StringsEn _root; // ignore: unused_field
-
-	// Translations
-	String reply({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
-		one: 'SHOW ${n} REPLY',
-		other: 'SHOW ${n} REPLIES',
-	);
-}
-
-/// Flat map(s) containing all translations.
-/// Only for edge cases! For simple maps, use the map function of this library.
-
-extension on _StringsEn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'dictionary_media_type': return 'Dictionary';
@@ -979,4 +949,881 @@ extension on _StringsEn {
 			default: return null;
 		}
 	}
+}
+
+// Path: <root>
+class _StringsZh implements _StringsEn {
+
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	_StringsZh.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = TranslationMetadata(
+		    locale: AppLocale.zh,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ) {
+		$meta.setFlatMapFunction(_flatMapFunction);
+	}
+
+	/// Metadata for the translations of <zh>.
+	@override final TranslationMetadata<AppLocale, _StringsEn> $meta;
+
+	/// Access flat map
+	dynamic operator[](String key) => $meta.getTranslation(key);
+
+	late final _StringsEn _root = this; // ignore: unused_field
+
+	// Translations
+	String get dictionary_media_type => '词典';
+	String get player_media_type => '播放器';
+	String get reader_media_type => '阅读器';
+	String get viewer_media_type => '查看器';
+	String get back => '返回';
+	String get search => '搜索';
+	String get search_ellipsis => '搜索...';
+	String get show_more => '显示更多';
+	String get show_menu => '显示菜单';
+	String get stash => '暂存区';
+	String get pick_image => '选择图片';
+	String get undo => '撤销';
+	String get copy => '复制';
+	String get clear => '清除';
+	String get creator => '制卡器';
+	String get share => '分享';
+	String get resume_last_media => '继续上次媒体';
+	String get change_source => '切换来源';
+	String get launch_source => '打开来源';
+	String get card_creator => '卡片制作者';
+	String get target_language => '目标语言';
+	String get show_options => '显示选项';
+	String get switch_profiles => '切换配置';
+	String get dictionaries => '词典';
+	String get enhancements => '增强项';
+	String get app_locale => '应用语言';
+	String get app_locale_warning => '社区插件和增强项由各自开发者维护，可能会以原始语言显示。';
+	String get dialog_play => '播放';
+	String get dialog_read => '阅读';
+	String get dialog_view => '查看';
+	String get dialog_edit => '编辑';
+	String get dialog_export => '导出';
+	String get dialog_import => '导入';
+	String get dialog_close => '关闭';
+	String get dialog_clear => '清除';
+	String get dialog_create => '创建';
+	String get dialog_delete => '删除';
+	String get dialog_cancel => '取消';
+	String get dialog_select => '选择';
+	String get dialog_stash => '暂存';
+	String get dialog_search => '搜索';
+	String get dialog_exit => '退出';
+	String get dialog_share => '分享';
+	String get dialog_pop => '取出';
+	String get dialog_save => '保存';
+	String get dialog_set => '设置';
+	String get dialog_browse => '浏览';
+	String get dialog_channel => '频道';
+	String get dialog_directory => '目录';
+	String get dialog_crop => '裁剪';
+	String get dialog_connect => '连接';
+	String get dialog_append => '追加';
+	String get dialog_record => '录制';
+	String get dialog_manage => '管理';
+	String get dialog_stop => '停止';
+	String get dialog_done => '完成';
+	String get reset => '重置';
+	String get dialog_launch_ankidroid => '启动 AnkiDroid';
+	String get media_item_delete_confirmation => '这会从历史记录中清除此项目。确定要继续吗？';
+	String get dictionaries_delete_confirmation => '删除词典也会清除历史记录中的所有词典结果。确定要继续吗？';
+	String get mappings_delete_confirmation => '此配置将被删除。确定要继续吗？';
+	String get catalog_delete_confirmation => '此目录将被删除。确定要继续吗？';
+	String get dictionaries_deleting_data => '正在删除词典数据...';
+	String get dictionaries_menu_empty => '导入词典后即可使用';
+	String get options_theme_light => '使用浅色主题';
+	String get options_theme_dark => '使用深色主题';
+	String get options_incognito_on => '开启无痕模式';
+	String get options_incognito_off => '关闭无痕模式';
+	String get options_dictionaries => '管理词典';
+	String get options_profiles => '导出配置';
+	String get options_enhancements => '用户增强项';
+	String get options_language => '语言设置';
+	String get options_github => '在 GitHub 查看仓库';
+	String get options_attribution => '许可与署名';
+	String get options_copy => '复制';
+	String get options_collapse => '折叠';
+	String get options_expand => '展开';
+	String get options_delete => '删除';
+	String get options_show => '显示';
+	String get options_hide => '隐藏';
+	String get options_edit => '编辑';
+	String get info_empty_home_tab => '历史记录为空';
+	String get delete_in_progress => '正在删除';
+	String get import_format => '导入格式';
+	String get import_in_progress => '正在导入';
+	String get import_start => '正在准备导入...';
+	String get import_clean => '正在清理工作区...';
+	String import_extract_count({required Object n}) => '已解压 ${n} 个文件...';
+	String get import_extract => '正在解压文件...';
+	String import_name({required Object name}) => '正在导入『${name}』...';
+	String get import_entries => '正在处理词条...';
+	String import_found_entry({required Object count}) => '找到 ${count} 个词条...';
+	String import_found_tag({required Object count}) => '找到 ${count} 个标签...';
+	String import_found_frequency({required Object count}) => '找到 ${count} 条频率数据...';
+	String import_found_pitch({required Object count}) => '找到 ${count} 条音高重音数据...';
+	String import_write_entry({required Object count, required Object total}) => '正在写入词条：\n${count} / ${total}';
+	String import_write_tag({required Object count, required Object total}) => '正在写入标签：\n${count} / ${total}';
+	String import_write_frequency({required Object count, required Object total}) => '正在写入频率数据：\n${count} / ${total}';
+	String import_write_pitch({required Object count, required Object total}) => '正在写入音高重音数据：\n${count} / ${total}';
+	String get import_failed => '词典导入失败。';
+	String get import_complete => '词典导入完成。';
+	String import_duplicate({required Object name}) => '已导入名为『${name}』的词典。';
+	String get dialog_title_dictionary_clear => '清除所有词典？';
+	String get dialog_content_dictionary_clear => '清空词典数据库也会清除历史记录中的所有搜索结果。';
+	String dialog_title_dictionary_delete({required Object name}) => '删除『${name}』？';
+	String get dialog_content_dictionary_delete => '删除单个词典可能比清空整个词典数据库更耗时。这也会清除历史记录中的所有搜索结果。';
+	String get delete_dictionary_data => '正在清除所有词典数据...';
+	String dictionary_tag({required Object name}) => '导入自 ${name}';
+	String get legalese => '一套功能完整的移动端沉浸式语言学习工具。\n\n最初由 Arianne Orpilla 为日语学习社区构建。Logo 由 suzy 和 Aaron Marbella 制作。\n\njidoujisho 是自由开源软件。完整的许可和署名信息请参阅项目仓库。喜欢这个应用？欢迎通过反馈、捐赠、报告问题或在 GitHub 贡献改进来帮助项目。';
+	String get same_name_dictionary_found => '发现同名词典。';
+	String import_file_extension_invalid({required Object extensions}) => '此格式需要以下扩展名的文件：${extensions}';
+	String get field_label_empty => '空';
+	String get model_to_map => '新配置使用的卡片类型';
+	String get mapping_name => '配置名称';
+	String get mapping_name_hint => '为配置指定名称';
+	String get error_profile_name => '配置名称无效';
+	String get error_profile_name_content => '此名称的配置已存在，或名称无效，无法保存。';
+	String get error_standard_profile_name => '配置名称无效';
+	String get error_standard_profile_name_content => '不能重命名标准配置。';
+	String get error_ankidroid_api => 'AnkiDroid 错误';
+	String get error_ankidroid_api_content => '与 AnkiDroid 通信时出现问题。\n\n请确保 AnkiDroid 后台服务处于活动状态，并已授予所有相关应用权限后再继续。';
+	String get info_standard_model => '已添加标准卡片类型';
+	String get info_standard_model_content => '『jidoujisho Kinomoto』已作为新的卡片类型添加到 AnkiDroid。\n\n如果你的设置使用不同的卡片类型或字段顺序，可以新增导出配置。';
+	String get error_model_missing => '缺少卡片类型';
+	String get error_model_missing_content => '当前所选配置对应的卡片类型不存在。\n\n该配置将被删除，并已改为选择标准配置。';
+	String get error_model_changed => '卡片类型已更改';
+	String get error_model_changed_content => '所选配置对应卡片类型的字段数量已经改变。\n\n当前所选配置的字段已重置，需要重新配置。';
+	String get creator_exporting_as => '正在使用配置创建卡片';
+	String get creator_exporting_as_fields_editing => '正在编辑配置字段';
+	String get creator_exporting_as_enhancements_editing => '正在编辑配置增强项';
+	String get creator_export_card => '创建卡片';
+	String get info_enhancements => '增强项可在创建卡片前自动编辑字段。选择字段右侧的槽位即可使用增强项。每个字段最多可使用五个右侧槽位。字段左侧槽位中的增强项会在即时制卡或打开卡片制作者时自动应用。';
+	String get info_actions => '快捷动作可用于词典搜索结果上的即时制卡和其他自动化。可以通过下方槽位分配动作。最多可使用六个槽位。';
+	String get no_more_available_enhancements => '此字段没有更多可用增强项';
+	String get no_more_available_quick_actions => '没有更多可用快捷动作';
+	String get assign_auto_enhancement => '分配自动增强项';
+	String get assign_manual_enhancement => '分配手动增强项';
+	String get remove_enhancement => '移除增强项';
+	String copy_of_mapping({required Object name}) => '${name} 的副本';
+	String get enter_search_term => '输入搜索词...';
+	String searching_for({required Object searchTerm}) => '正在搜索『${searchTerm}』...';
+	String get no_search_results => '没有找到搜索结果。';
+	String get edit_actions => '编辑词典快捷动作';
+	String get remove_action => '移除动作';
+	String get assign_action => '分配动作';
+	String dictionary_import_tag({required Object name}) => '导入自 ${name}';
+	String stash_added_single({required Object term}) => '『${term}』已添加到暂存区。';
+	String get stash_added_multiple => '多个项目已添加到暂存区。';
+	String stash_clear_single({required Object term}) => '『${term}』已从暂存区移除。';
+	String get stash_clear_title => '清空暂存区';
+	String get stash_clear_description => '将清除所有内容。确定吗？';
+	String get stash_placeholder => '暂存区没有项目';
+	String get stash_nothing_to_pop => '暂存区没有可取出的项目。';
+	String get no_sentences_found => '没有找到例句';
+	String get failed_online_service => '无法与在线服务通信';
+	String get search_label_before => '显示 ';
+	String get search_label_middle => ' / ';
+	String get search_label_after => '条搜索结果，搜索词：';
+	String get clear_dictionary_title => '清除词典结果历史';
+	String get clear_dictionary_description => '这会清除历史记录中的所有词典结果。确定吗？';
+	String get clear_search_title => '清除搜索历史';
+	String get clear_search_description => '这会清除此历史记录中的所有搜索词。确定吗？';
+	String get clear_creator_title => '清空制卡器';
+	String get clear_creator_description => '这会清除所有字段。确定吗？';
+	String get copied_to_clipboard => '已复制到剪贴板。';
+	String get no_text => '没有文本。';
+	String get info_fields => '字段会根据即时导出时选择的词条，或打开卡片制作者前的上下文预填。若要将某个字段包含在卡片导出中，它必须在下方启用，并映射到当前所选导出配置中。已启用字段也可以在下方折叠，以减少编辑时的杂乱。手动编辑卡片时，可使用卡片制作者右上角的清除按钮快速清空这些隐藏字段。';
+	String get edit_fields => '编辑和重新排序字段';
+	String get remove_field => '移除字段';
+	String get add_field => '分配字段';
+	String get add_field_hint => '为此行分配字段';
+	String get no_more_available_fields => '没有更多可用字段';
+	String get hidden_fields => '附加字段';
+	String field_fallback_used({required Object field, required Object secondField}) => '${field} 字段使用 ${secondField} 作为备用搜索词。';
+	String get no_text_to_search => '没有可搜索的文本。';
+	String get image_search_label_before => '正在选择图片 ';
+	String get image_search_label_middle => ' / ';
+	String get image_search_label_after => '，搜索词：';
+	String get image_search_label_none_middle => '没有图片 ';
+	String get image_search_label_none_before => '正在选择 ';
+	String get preparing_instant_export => '正在准备导出卡片...';
+	String get processing_in_progress => '正在准备图片';
+	String get searching_in_progress => '正在搜索 ';
+	String get audio_unavailable => '找不到音频。';
+	String get no_audio_enhancements => '没有分配音频增强项。';
+	String card_exported({required Object deck}) => '卡片已导出到『${deck}』。';
+	String get info_incognito_on => '无痕模式已开启。词典、媒体和搜索历史将不会被记录。';
+	String get info_incognito_off => '无痕模式已关闭。词典、媒体和搜索历史将会被记录。';
+	String get exit_media_title => '退出媒体';
+	String get exit_media_description => '这会返回主菜单。确定吗？';
+	String get unimplemented_source => '未实现的来源';
+	String get clear_browser_title => '清除浏览器数据';
+	String get clear_browser_description => '这会清除使用网页内容的媒体来源所用的所有浏览数据。确定吗？';
+	String get ttu_no_books_added => 'ッツ Ebook Reader 中没有添加书籍';
+	String get local_media_directory_empty => '目录中没有文件夹或视频';
+	String get pick_video_file => '选择视频文件';
+	String get navigate_up_one_directory_level => '向上一级目录';
+	String get play => '播放';
+	String get pause => '暂停';
+	String get record => '录制';
+	String get stop => '停止';
+	String get replay => '重播';
+	String get audio_subtitles => '音频/字幕';
+	String get player_option_shadowing => '跟读模式';
+	String get player_option_change_mode => '更改播放模式';
+	String get player_option_listening_comprehension => '听力理解模式';
+	String get player_option_drag_to_select => '使用拖动选择字幕';
+	String get player_option_tap_to_select => '使用点按选择字幕';
+	String get player_option_dictionary_menu => '选择活动词典来源';
+	String get player_option_cast_video => '投放到显示设备';
+	String get player_option_share_subtitle => '分享当前字幕';
+	String get player_option_export => '从上下文创建卡片';
+	String get player_option_audio => '音频';
+	String get player_option_subtitle => '字幕';
+	String get player_option_subtitle_external => '外部';
+	String get player_option_subtitle_none => '无';
+	String get player_option_select_subtitle => '选择字幕轨道';
+	String get player_option_select_audio => '选择音频轨道';
+	String get player_option_text_filter => '使用正则表达式过滤器';
+	String get player_option_blur_preferences => '模糊组件偏好';
+	String get player_option_blur_use => '使用模糊组件';
+	String get player_option_blur_radius => '模糊半径';
+	String get player_option_blur_options => '设置模糊组件颜色和模糊度';
+	String get player_option_blur_reset => '重置模糊组件大小和位置';
+	String get player_align_subtitle_transcript => '将字幕与转写对齐';
+	String get player_option_subtitle_appearance => '字幕时间和外观';
+	String get player_option_load_subtitles => '加载外部字幕';
+	String get player_option_subtitle_delay => '字幕延迟';
+	String get player_option_audio_allowance => '音频余量';
+	String get player_option_font_name => '字幕字体名称';
+	String get player_option_font_size => '字幕字号';
+	String get player_option_regex_filter => '正则表达式过滤器';
+	String get player_option_subtitle_background_opacity => '字幕背景不透明度';
+	String get player_option_subtitle_background_blur_radius => '字幕背景模糊半径';
+	String get player_option_outline_width => '字幕描边宽度';
+	String get player_option_subtitle_always_above_bottom_bar => '始终在底部栏区域上方显示字幕';
+	String get player_subtitles_transcript_empty => '转写为空。';
+	String get player_prepare_export => '正在准备卡片...';
+	String get player_change_player_orientation => '更改播放器方向';
+	String get no_current_media => '播放或刷新媒体以获取歌词';
+	String get lyrics_permission_required => '未授予所需权限';
+	String get no_lyrics_found => '没有找到歌词';
+	String get trending => '热门';
+	String get caption_filter => '筛选隐藏字幕';
+	String get captions_query => '正在查询字幕';
+	String get captions_target => '目标语言';
+	String get captions_app => '应用语言';
+	String get captions_other => '其他语言';
+	String get captions_closed => '隐藏字幕';
+	String get captions_auto => '自动字幕';
+	String get captions_unavailable => '没有字幕';
+	String get captions_error => '查询字幕时出错';
+	String get change_quality => '更改画质';
+	String get closed_captions_query => '正在查询字幕';
+	String get closed_captions_target => '目标语言字幕';
+	String get closed_captions_app => '应用语言字幕';
+	String get closed_captions_other => '其他语言字幕';
+	String get closed_captions_unavailable => '没有字幕';
+	String get closed_captions_error => '查询字幕时出错';
+	String get stream_url => '流媒体 URL';
+	String get default_option => '默认';
+	String get paste => '粘贴';
+	String get select_all => '全选';
+	String get lyrics_title => '标题';
+	String get lyrics_artist => '艺术家';
+	String get set_media => '设置媒体';
+	String get no_recordings_found => '没有找到录音';
+	String get wrap_image_audio => '导出时包含图片/音频 HTML 标签';
+	String get server_address => '服务器地址';
+	String get no_active_connection => '没有活动连接';
+	String get failed_server_connection => '连接服务器失败';
+	String get no_text_received => '未收到文本';
+	String get text_segmentation => '文本分词';
+	String get connect_disconnect => '连接/断开';
+	String get clear_text_title => '清除文本';
+	String get clear_text_description => '这会清除所有接收的文本。确定吗？';
+	String get close_connection_title => '关闭连接';
+	String get close_connection_description => '这会结束 WebSocket 连接并清除所有接收的文本。确定吗？';
+	String get use_slow_import => '慢速导入（失败时使用）';
+	String get settings => '设置';
+	String get manager => '管理器';
+	String get volume_button_page_turning => '音量键翻页';
+	String get invert_volume_buttons => '反转音量键';
+	String get volume_button_turning_speed => '连续滚动速度';
+	String get extend_page_beyond_navbar => '将页面延伸到导航栏之外';
+	String get tweaks => '微调';
+	String get increase => '增加';
+	String get decrease => '减少';
+	String get unit_milliseconds => '毫秒';
+	String get unit_pixels => '像素';
+	String get dictionary_settings => '词典设置';
+	String get auto_search => '自动搜索';
+	String get auto_search_debounce_delay => '自动搜索防抖延迟';
+	String get dictionary_font_size => '词典字号';
+	String get close_on_export => '导出后关闭';
+	String get close_on_export_on => '卡片制作者现在会在卡片导出后自动关闭。';
+	String get close_on_export_off => '卡片制作者将不再在卡片导出后关闭。';
+	String get export_profile_empty => '你的导出配置没有设置字段，需要先配置。';
+	String get error_export_media_ankidroid => '将媒体导出到 AnkiDroid 时出错。';
+	String get error_add_note => '向 AnkiDroid 添加笔记时出错。';
+	String get first_time_setup => '首次设置';
+	String get first_time_setup_description => '欢迎使用 jidoujisho！设置你的目标语言后，系统会为你定制默认配置。之后可随时更改。';
+	String get maximum_entries => '词典词条查询上限';
+	String get maximum_terms => '结果中的词典词头上限';
+	String get use_br_tags => '导出时使用换行标签而不是换行符';
+	String get prepend_dictionary_names => '在释义前添加词典名称';
+	String get highlight_on_tap => '点按时高亮文本';
+	String get no_audio_file => '没有可保存的音频文件。';
+	String get storage_permissions => '请授予以下权限以导出到 AnkiDroid。';
+	String get stream => '流';
+	String get network_subtitles_warning => '网络流不支持内嵌字幕。';
+	String get accessibility => '需要权限才能从无障碍事件中捕获文本。';
+	String get comments => '评论';
+	String get replies => '回复';
+	String get no_comments_queried => '未查询评论';
+	String get no_text_in_clipboard => '没有可显示的文本';
+	String file_downloaded({required Object name}) => '文件已下载：${name}';
+	String get cfhange_sort_order => '更改排序顺序';
+	String get login => '登录';
+	String get send => '发送';
+	String get no_messages => '开始聊天';
+	String get enter_message => '输入消息...';
+	String get clear_message_title => '清除消息';
+	String get clear_message_description => '这会清除所有消息并开始新的聊天。确定吗？';
+	String get error_chatgpt_response => '请求失败或受到速率限制。请稍后重试，或检查你的使用限制。';
+	String get pick_file => '选择文件';
+	String get open_url => '打开 URL';
+	String get catalogs => '目录';
+	String get name => '名称';
+	String get url => 'URL';
+	String get duplicate_catalog => '已存在使用此 URL 的目录。';
+	String get no_catalogs_listed => '没有列出的目录';
+	String get go_back => '返回';
+	String get invalid_mokuro_file => '文件不是 Mokuro 生成的 HTML 文件。';
+	String get create_catalog => '创建目录';
+	String get adapt_ttu_theme => '使词典弹窗适配主题';
+	String get sentence_picker => '句子选择器';
+	String field_locked({required Object field}) => '${field} 已锁定，制卡器活动时导出不会清除它。';
+	String field_unlocked({required Object field}) => '${field} 已解锁，导出时会清除。';
+	String get field_lock => '锁定字段';
+	String get field_unlock => '解锁字段';
+	String get use_dark_theme => '使用深色主题';
+	String get stretch_to_fill_screen => '拉伸以填满屏幕';
+	String get processing_embedded_subtitles => '正在处理内嵌字幕。请稍后再试。';
+	String get transcript_playback_mode => '转写播放模式';
+	String get toggle_transcript_background => '切换转写背景';
+	String get seek => '跳转';
+	String get saved_tags => '标签已保存。';
+	String structured_content_first({required Object i}) => '有 ${i} 条释义不受支持，已省略。';
+	String get structured_content_second => '请考虑使用此词典的非结构化内容版本。';
+	String get missing_api_key => '未提供 API key';
+	String get chatgpt_error => '从 ChatGPT 获取回复时出错。';
+	String get api_key => 'API Key';
+	String subtitle_delay_set({required Object ms}) => '字幕延迟已设为 ${ms} 毫秒。';
+	String get cancel => '取消';
+	String get server_port_in_use => '本地服务器端口已被占用';
+	String get google_fonts => 'Google Fonts';
+	String get video_show => '显示视频';
+	String get video_hide => '隐藏视频';
+	String get subtitle_timing_show => '显示字幕时间';
+	String get subtitle_timing_hide => '隐藏字幕时间';
+	String get find_next => '查找下一个';
+	String get find_previous => '查找上一个';
+	String get shadowing_mode => '跟读模式';
+	String get display_settings => '显示设置';
+	String get cloze => '填空';
+	String get info_standard_update => '新的标准配置卡片类型';
+	String get info_standard_update_content => '标准配置现在使用『jidoujisho Kinomoto』卡片类型。\n\n你的旧版标准配置仍会保留以保持向后兼容。';
+	late final _StringsRetryingInEn retrying_in = _StringsRetryingInZh._(_root);
+	late final _StringsViewRepliesEn view_replies = _StringsViewRepliesZh._(_root);
+	String get manage_duplicate_checks => '管理重复检查';
+	String get playback_normal => '普通播放模式';
+	String get playback_condensed => '紧凑播放模式';
+	String get playback_auto_pause => '字幕暂停播放模式';
+	String get player_hardware_acceleration => '硬件加速';
+	String get player_use_opensles => 'OpenSL ES 音频';
+	String get go_forward => '前进';
+	String get browse => '浏览';
+	String get bookmark => '书签';
+	String get add_bookmark => '添加书签';
+	String get add_to_reading_list => '添加到阅读列表';
+	String get reading_list_empty => '阅读列表为空';
+	String get reading_list_add_toast => '已添加到阅读列表。';
+	String get reading_list_remove_toast => '已从阅读列表移除。';
+	String get ad_block_hosts => '广告拦截 hosts';
+	String get error_parsing_hosts_file => '解析 hosts 文件时出错。';
+	String get double_tap_seek_duration => '双击跳转时长';
+	String get player_background_play => '后台播放';
+	String get loaded_from_cache => '已从网页归档缓存加载。';
+	String get player_show_subtitle_in_notification => '在媒体通知中显示字幕';
+	String get subtitles_processing => '正在处理字幕...';
+	String get video_unavailable => '视频不可用';
+	String get video_unavailable_content => '无法获取视频流。可能存在限制，导致无法观看此视频。';
+	String get video_file_error => '无法加载文件';
+	String get video_file_error_content => '无法加载该视频文件。请确保文件存在，并位于应用可以访问的目录中。';
+
+	dynamic _flatMapFunction(String path) {
+		switch (path) {
+			case 'dictionary_media_type': return '词典';
+			case 'player_media_type': return '播放器';
+			case 'reader_media_type': return '阅读器';
+			case 'viewer_media_type': return '查看器';
+			case 'back': return '返回';
+			case 'search': return '搜索';
+			case 'search_ellipsis': return '搜索...';
+			case 'show_more': return '显示更多';
+			case 'show_menu': return '显示菜单';
+			case 'stash': return '暂存区';
+			case 'pick_image': return '选择图片';
+			case 'undo': return '撤销';
+			case 'copy': return '复制';
+			case 'clear': return '清除';
+			case 'creator': return '制卡器';
+			case 'share': return '分享';
+			case 'resume_last_media': return '继续上次媒体';
+			case 'change_source': return '切换来源';
+			case 'launch_source': return '打开来源';
+			case 'card_creator': return '卡片制作者';
+			case 'target_language': return '目标语言';
+			case 'show_options': return '显示选项';
+			case 'switch_profiles': return '切换配置';
+			case 'dictionaries': return '词典';
+			case 'enhancements': return '增强项';
+			case 'app_locale': return '应用语言';
+			case 'app_locale_warning': return '社区插件和增强项由各自开发者维护，可能会以原始语言显示。';
+			case 'dialog_play': return '播放';
+			case 'dialog_read': return '阅读';
+			case 'dialog_view': return '查看';
+			case 'dialog_edit': return '编辑';
+			case 'dialog_export': return '导出';
+			case 'dialog_import': return '导入';
+			case 'dialog_close': return '关闭';
+			case 'dialog_clear': return '清除';
+			case 'dialog_create': return '创建';
+			case 'dialog_delete': return '删除';
+			case 'dialog_cancel': return '取消';
+			case 'dialog_select': return '选择';
+			case 'dialog_stash': return '暂存';
+			case 'dialog_search': return '搜索';
+			case 'dialog_exit': return '退出';
+			case 'dialog_share': return '分享';
+			case 'dialog_pop': return '取出';
+			case 'dialog_save': return '保存';
+			case 'dialog_set': return '设置';
+			case 'dialog_browse': return '浏览';
+			case 'dialog_channel': return '频道';
+			case 'dialog_directory': return '目录';
+			case 'dialog_crop': return '裁剪';
+			case 'dialog_connect': return '连接';
+			case 'dialog_append': return '追加';
+			case 'dialog_record': return '录制';
+			case 'dialog_manage': return '管理';
+			case 'dialog_stop': return '停止';
+			case 'dialog_done': return '完成';
+			case 'reset': return '重置';
+			case 'dialog_launch_ankidroid': return '启动 AnkiDroid';
+			case 'media_item_delete_confirmation': return '这会从历史记录中清除此项目。确定要继续吗？';
+			case 'dictionaries_delete_confirmation': return '删除词典也会清除历史记录中的所有词典结果。确定要继续吗？';
+			case 'mappings_delete_confirmation': return '此配置将被删除。确定要继续吗？';
+			case 'catalog_delete_confirmation': return '此目录将被删除。确定要继续吗？';
+			case 'dictionaries_deleting_data': return '正在删除词典数据...';
+			case 'dictionaries_menu_empty': return '导入词典后即可使用';
+			case 'options_theme_light': return '使用浅色主题';
+			case 'options_theme_dark': return '使用深色主题';
+			case 'options_incognito_on': return '开启无痕模式';
+			case 'options_incognito_off': return '关闭无痕模式';
+			case 'options_dictionaries': return '管理词典';
+			case 'options_profiles': return '导出配置';
+			case 'options_enhancements': return '用户增强项';
+			case 'options_language': return '语言设置';
+			case 'options_github': return '在 GitHub 查看仓库';
+			case 'options_attribution': return '许可与署名';
+			case 'options_copy': return '复制';
+			case 'options_collapse': return '折叠';
+			case 'options_expand': return '展开';
+			case 'options_delete': return '删除';
+			case 'options_show': return '显示';
+			case 'options_hide': return '隐藏';
+			case 'options_edit': return '编辑';
+			case 'info_empty_home_tab': return '历史记录为空';
+			case 'delete_in_progress': return '正在删除';
+			case 'import_format': return '导入格式';
+			case 'import_in_progress': return '正在导入';
+			case 'import_start': return '正在准备导入...';
+			case 'import_clean': return '正在清理工作区...';
+			case 'import_extract_count': return ({required Object n}) => '已解压 ${n} 个文件...';
+			case 'import_extract': return '正在解压文件...';
+			case 'import_name': return ({required Object name}) => '正在导入『${name}』...';
+			case 'import_entries': return '正在处理词条...';
+			case 'import_found_entry': return ({required Object count}) => '找到 ${count} 个词条...';
+			case 'import_found_tag': return ({required Object count}) => '找到 ${count} 个标签...';
+			case 'import_found_frequency': return ({required Object count}) => '找到 ${count} 条频率数据...';
+			case 'import_found_pitch': return ({required Object count}) => '找到 ${count} 条音高重音数据...';
+			case 'import_write_entry': return ({required Object count, required Object total}) => '正在写入词条：\n${count} / ${total}';
+			case 'import_write_tag': return ({required Object count, required Object total}) => '正在写入标签：\n${count} / ${total}';
+			case 'import_write_frequency': return ({required Object count, required Object total}) => '正在写入频率数据：\n${count} / ${total}';
+			case 'import_write_pitch': return ({required Object count, required Object total}) => '正在写入音高重音数据：\n${count} / ${total}';
+			case 'import_failed': return '词典导入失败。';
+			case 'import_complete': return '词典导入完成。';
+			case 'import_duplicate': return ({required Object name}) => '已导入名为『${name}』的词典。';
+			case 'dialog_title_dictionary_clear': return '清除所有词典？';
+			case 'dialog_content_dictionary_clear': return '清空词典数据库也会清除历史记录中的所有搜索结果。';
+			case 'dialog_title_dictionary_delete': return ({required Object name}) => '删除『${name}』？';
+			case 'dialog_content_dictionary_delete': return '删除单个词典可能比清空整个词典数据库更耗时。这也会清除历史记录中的所有搜索结果。';
+			case 'delete_dictionary_data': return '正在清除所有词典数据...';
+			case 'dictionary_tag': return ({required Object name}) => '导入自 ${name}';
+			case 'legalese': return '一套功能完整的移动端沉浸式语言学习工具。\n\n最初由 Arianne Orpilla 为日语学习社区构建。Logo 由 suzy 和 Aaron Marbella 制作。\n\njidoujisho 是自由开源软件。完整的许可和署名信息请参阅项目仓库。喜欢这个应用？欢迎通过反馈、捐赠、报告问题或在 GitHub 贡献改进来帮助项目。';
+			case 'same_name_dictionary_found': return '发现同名词典。';
+			case 'import_file_extension_invalid': return ({required Object extensions}) => '此格式需要以下扩展名的文件：${extensions}';
+			case 'field_label_empty': return '空';
+			case 'model_to_map': return '新配置使用的卡片类型';
+			case 'mapping_name': return '配置名称';
+			case 'mapping_name_hint': return '为配置指定名称';
+			case 'error_profile_name': return '配置名称无效';
+			case 'error_profile_name_content': return '此名称的配置已存在，或名称无效，无法保存。';
+			case 'error_standard_profile_name': return '配置名称无效';
+			case 'error_standard_profile_name_content': return '不能重命名标准配置。';
+			case 'error_ankidroid_api': return 'AnkiDroid 错误';
+			case 'error_ankidroid_api_content': return '与 AnkiDroid 通信时出现问题。\n\n请确保 AnkiDroid 后台服务处于活动状态，并已授予所有相关应用权限后再继续。';
+			case 'info_standard_model': return '已添加标准卡片类型';
+			case 'info_standard_model_content': return '『jidoujisho Kinomoto』已作为新的卡片类型添加到 AnkiDroid。\n\n如果你的设置使用不同的卡片类型或字段顺序，可以新增导出配置。';
+			case 'error_model_missing': return '缺少卡片类型';
+			case 'error_model_missing_content': return '当前所选配置对应的卡片类型不存在。\n\n该配置将被删除，并已改为选择标准配置。';
+			case 'error_model_changed': return '卡片类型已更改';
+			case 'error_model_changed_content': return '所选配置对应卡片类型的字段数量已经改变。\n\n当前所选配置的字段已重置，需要重新配置。';
+			case 'creator_exporting_as': return '正在使用配置创建卡片';
+			case 'creator_exporting_as_fields_editing': return '正在编辑配置字段';
+			case 'creator_exporting_as_enhancements_editing': return '正在编辑配置增强项';
+			case 'creator_export_card': return '创建卡片';
+			case 'info_enhancements': return '增强项可在创建卡片前自动编辑字段。选择字段右侧的槽位即可使用增强项。每个字段最多可使用五个右侧槽位。字段左侧槽位中的增强项会在即时制卡或打开卡片制作者时自动应用。';
+			case 'info_actions': return '快捷动作可用于词典搜索结果上的即时制卡和其他自动化。可以通过下方槽位分配动作。最多可使用六个槽位。';
+			case 'no_more_available_enhancements': return '此字段没有更多可用增强项';
+			case 'no_more_available_quick_actions': return '没有更多可用快捷动作';
+			case 'assign_auto_enhancement': return '分配自动增强项';
+			case 'assign_manual_enhancement': return '分配手动增强项';
+			case 'remove_enhancement': return '移除增强项';
+			case 'copy_of_mapping': return ({required Object name}) => '${name} 的副本';
+			case 'enter_search_term': return '输入搜索词...';
+			case 'searching_for': return ({required Object searchTerm}) => '正在搜索『${searchTerm}』...';
+			case 'no_search_results': return '没有找到搜索结果。';
+			case 'edit_actions': return '编辑词典快捷动作';
+			case 'remove_action': return '移除动作';
+			case 'assign_action': return '分配动作';
+			case 'dictionary_import_tag': return ({required Object name}) => '导入自 ${name}';
+			case 'stash_added_single': return ({required Object term}) => '『${term}』已添加到暂存区。';
+			case 'stash_added_multiple': return '多个项目已添加到暂存区。';
+			case 'stash_clear_single': return ({required Object term}) => '『${term}』已从暂存区移除。';
+			case 'stash_clear_title': return '清空暂存区';
+			case 'stash_clear_description': return '将清除所有内容。确定吗？';
+			case 'stash_placeholder': return '暂存区没有项目';
+			case 'stash_nothing_to_pop': return '暂存区没有可取出的项目。';
+			case 'no_sentences_found': return '没有找到例句';
+			case 'failed_online_service': return '无法与在线服务通信';
+			case 'search_label_before': return '显示 ';
+			case 'search_label_middle': return ' / ';
+			case 'search_label_after': return '条搜索结果，搜索词：';
+			case 'clear_dictionary_title': return '清除词典结果历史';
+			case 'clear_dictionary_description': return '这会清除历史记录中的所有词典结果。确定吗？';
+			case 'clear_search_title': return '清除搜索历史';
+			case 'clear_search_description': return '这会清除此历史记录中的所有搜索词。确定吗？';
+			case 'clear_creator_title': return '清空制卡器';
+			case 'clear_creator_description': return '这会清除所有字段。确定吗？';
+			case 'copied_to_clipboard': return '已复制到剪贴板。';
+			case 'no_text': return '没有文本。';
+			case 'info_fields': return '字段会根据即时导出时选择的词条，或打开卡片制作者前的上下文预填。若要将某个字段包含在卡片导出中，它必须在下方启用，并映射到当前所选导出配置中。已启用字段也可以在下方折叠，以减少编辑时的杂乱。手动编辑卡片时，可使用卡片制作者右上角的清除按钮快速清空这些隐藏字段。';
+			case 'edit_fields': return '编辑和重新排序字段';
+			case 'remove_field': return '移除字段';
+			case 'add_field': return '分配字段';
+			case 'add_field_hint': return '为此行分配字段';
+			case 'no_more_available_fields': return '没有更多可用字段';
+			case 'hidden_fields': return '附加字段';
+			case 'field_fallback_used': return ({required Object field, required Object secondField}) => '${field} 字段使用 ${secondField} 作为备用搜索词。';
+			case 'no_text_to_search': return '没有可搜索的文本。';
+			case 'image_search_label_before': return '正在选择图片 ';
+			case 'image_search_label_middle': return ' / ';
+			case 'image_search_label_after': return '，搜索词：';
+			case 'image_search_label_none_middle': return '没有图片 ';
+			case 'image_search_label_none_before': return '正在选择 ';
+			case 'preparing_instant_export': return '正在准备导出卡片...';
+			case 'processing_in_progress': return '正在准备图片';
+			case 'searching_in_progress': return '正在搜索 ';
+			case 'audio_unavailable': return '找不到音频。';
+			case 'no_audio_enhancements': return '没有分配音频增强项。';
+			case 'card_exported': return ({required Object deck}) => '卡片已导出到『${deck}』。';
+			case 'info_incognito_on': return '无痕模式已开启。词典、媒体和搜索历史将不会被记录。';
+			case 'info_incognito_off': return '无痕模式已关闭。词典、媒体和搜索历史将会被记录。';
+			case 'exit_media_title': return '退出媒体';
+			case 'exit_media_description': return '这会返回主菜单。确定吗？';
+			case 'unimplemented_source': return '未实现的来源';
+			case 'clear_browser_title': return '清除浏览器数据';
+			case 'clear_browser_description': return '这会清除使用网页内容的媒体来源所用的所有浏览数据。确定吗？';
+			case 'ttu_no_books_added': return 'ッツ Ebook Reader 中没有添加书籍';
+			case 'local_media_directory_empty': return '目录中没有文件夹或视频';
+			case 'pick_video_file': return '选择视频文件';
+			case 'navigate_up_one_directory_level': return '向上一级目录';
+			case 'play': return '播放';
+			case 'pause': return '暂停';
+			case 'record': return '录制';
+			case 'stop': return '停止';
+			case 'replay': return '重播';
+			case 'audio_subtitles': return '音频/字幕';
+			case 'player_option_shadowing': return '跟读模式';
+			case 'player_option_change_mode': return '更改播放模式';
+			case 'player_option_listening_comprehension': return '听力理解模式';
+			case 'player_option_drag_to_select': return '使用拖动选择字幕';
+			case 'player_option_tap_to_select': return '使用点按选择字幕';
+			case 'player_option_dictionary_menu': return '选择活动词典来源';
+			case 'player_option_cast_video': return '投放到显示设备';
+			case 'player_option_share_subtitle': return '分享当前字幕';
+			case 'player_option_export': return '从上下文创建卡片';
+			case 'player_option_audio': return '音频';
+			case 'player_option_subtitle': return '字幕';
+			case 'player_option_subtitle_external': return '外部';
+			case 'player_option_subtitle_none': return '无';
+			case 'player_option_select_subtitle': return '选择字幕轨道';
+			case 'player_option_select_audio': return '选择音频轨道';
+			case 'player_option_text_filter': return '使用正则表达式过滤器';
+			case 'player_option_blur_preferences': return '模糊组件偏好';
+			case 'player_option_blur_use': return '使用模糊组件';
+			case 'player_option_blur_radius': return '模糊半径';
+			case 'player_option_blur_options': return '设置模糊组件颜色和模糊度';
+			case 'player_option_blur_reset': return '重置模糊组件大小和位置';
+			case 'player_align_subtitle_transcript': return '将字幕与转写对齐';
+			case 'player_option_subtitle_appearance': return '字幕时间和外观';
+			case 'player_option_load_subtitles': return '加载外部字幕';
+			case 'player_option_subtitle_delay': return '字幕延迟';
+			case 'player_option_audio_allowance': return '音频余量';
+			case 'player_option_font_name': return '字幕字体名称';
+			case 'player_option_font_size': return '字幕字号';
+			case 'player_option_regex_filter': return '正则表达式过滤器';
+			case 'player_option_subtitle_background_opacity': return '字幕背景不透明度';
+			case 'player_option_subtitle_background_blur_radius': return '字幕背景模糊半径';
+			case 'player_option_outline_width': return '字幕描边宽度';
+			case 'player_option_subtitle_always_above_bottom_bar': return '始终在底部栏区域上方显示字幕';
+			case 'player_subtitles_transcript_empty': return '转写为空。';
+			case 'player_prepare_export': return '正在准备卡片...';
+			case 'player_change_player_orientation': return '更改播放器方向';
+			case 'no_current_media': return '播放或刷新媒体以获取歌词';
+			case 'lyrics_permission_required': return '未授予所需权限';
+			case 'no_lyrics_found': return '没有找到歌词';
+			case 'trending': return '热门';
+			case 'caption_filter': return '筛选隐藏字幕';
+			case 'captions_query': return '正在查询字幕';
+			case 'captions_target': return '目标语言';
+			case 'captions_app': return '应用语言';
+			case 'captions_other': return '其他语言';
+			case 'captions_closed': return '隐藏字幕';
+			case 'captions_auto': return '自动字幕';
+			case 'captions_unavailable': return '没有字幕';
+			case 'captions_error': return '查询字幕时出错';
+			case 'change_quality': return '更改画质';
+			case 'closed_captions_query': return '正在查询字幕';
+			case 'closed_captions_target': return '目标语言字幕';
+			case 'closed_captions_app': return '应用语言字幕';
+			case 'closed_captions_other': return '其他语言字幕';
+			case 'closed_captions_unavailable': return '没有字幕';
+			case 'closed_captions_error': return '查询字幕时出错';
+			case 'stream_url': return '流媒体 URL';
+			case 'default_option': return '默认';
+			case 'paste': return '粘贴';
+			case 'select_all': return '全选';
+			case 'lyrics_title': return '标题';
+			case 'lyrics_artist': return '艺术家';
+			case 'set_media': return '设置媒体';
+			case 'no_recordings_found': return '没有找到录音';
+			case 'wrap_image_audio': return '导出时包含图片/音频 HTML 标签';
+			case 'server_address': return '服务器地址';
+			case 'no_active_connection': return '没有活动连接';
+			case 'failed_server_connection': return '连接服务器失败';
+			case 'no_text_received': return '未收到文本';
+			case 'text_segmentation': return '文本分词';
+			case 'connect_disconnect': return '连接/断开';
+			case 'clear_text_title': return '清除文本';
+			case 'clear_text_description': return '这会清除所有接收的文本。确定吗？';
+			case 'close_connection_title': return '关闭连接';
+			case 'close_connection_description': return '这会结束 WebSocket 连接并清除所有接收的文本。确定吗？';
+			case 'use_slow_import': return '慢速导入（失败时使用）';
+			case 'settings': return '设置';
+			case 'manager': return '管理器';
+			case 'volume_button_page_turning': return '音量键翻页';
+			case 'invert_volume_buttons': return '反转音量键';
+			case 'volume_button_turning_speed': return '连续滚动速度';
+			case 'extend_page_beyond_navbar': return '将页面延伸到导航栏之外';
+			case 'tweaks': return '微调';
+			case 'increase': return '增加';
+			case 'decrease': return '减少';
+			case 'unit_milliseconds': return '毫秒';
+			case 'unit_pixels': return '像素';
+			case 'dictionary_settings': return '词典设置';
+			case 'auto_search': return '自动搜索';
+			case 'auto_search_debounce_delay': return '自动搜索防抖延迟';
+			case 'dictionary_font_size': return '词典字号';
+			case 'close_on_export': return '导出后关闭';
+			case 'close_on_export_on': return '卡片制作者现在会在卡片导出后自动关闭。';
+			case 'close_on_export_off': return '卡片制作者将不再在卡片导出后关闭。';
+			case 'export_profile_empty': return '你的导出配置没有设置字段，需要先配置。';
+			case 'error_export_media_ankidroid': return '将媒体导出到 AnkiDroid 时出错。';
+			case 'error_add_note': return '向 AnkiDroid 添加笔记时出错。';
+			case 'first_time_setup': return '首次设置';
+			case 'first_time_setup_description': return '欢迎使用 jidoujisho！设置你的目标语言后，系统会为你定制默认配置。之后可随时更改。';
+			case 'maximum_entries': return '词典词条查询上限';
+			case 'maximum_terms': return '结果中的词典词头上限';
+			case 'use_br_tags': return '导出时使用换行标签而不是换行符';
+			case 'prepend_dictionary_names': return '在释义前添加词典名称';
+			case 'highlight_on_tap': return '点按时高亮文本';
+			case 'no_audio_file': return '没有可保存的音频文件。';
+			case 'storage_permissions': return '请授予以下权限以导出到 AnkiDroid。';
+			case 'stream': return '流';
+			case 'network_subtitles_warning': return '网络流不支持内嵌字幕。';
+			case 'accessibility': return '需要权限才能从无障碍事件中捕获文本。';
+			case 'comments': return '评论';
+			case 'replies': return '回复';
+			case 'no_comments_queried': return '未查询评论';
+			case 'no_text_in_clipboard': return '没有可显示的文本';
+			case 'file_downloaded': return ({required Object name}) => '文件已下载：${name}';
+			case 'cfhange_sort_order': return '更改排序顺序';
+			case 'login': return '登录';
+			case 'send': return '发送';
+			case 'no_messages': return '开始聊天';
+			case 'enter_message': return '输入消息...';
+			case 'clear_message_title': return '清除消息';
+			case 'clear_message_description': return '这会清除所有消息并开始新的聊天。确定吗？';
+			case 'error_chatgpt_response': return '请求失败或受到速率限制。请稍后重试，或检查你的使用限制。';
+			case 'pick_file': return '选择文件';
+			case 'open_url': return '打开 URL';
+			case 'catalogs': return '目录';
+			case 'name': return '名称';
+			case 'url': return 'URL';
+			case 'duplicate_catalog': return '已存在使用此 URL 的目录。';
+			case 'no_catalogs_listed': return '没有列出的目录';
+			case 'go_back': return '返回';
+			case 'invalid_mokuro_file': return '文件不是 Mokuro 生成的 HTML 文件。';
+			case 'create_catalog': return '创建目录';
+			case 'adapt_ttu_theme': return '使词典弹窗适配主题';
+			case 'sentence_picker': return '句子选择器';
+			case 'field_locked': return ({required Object field}) => '${field} 已锁定，制卡器活动时导出不会清除它。';
+			case 'field_unlocked': return ({required Object field}) => '${field} 已解锁，导出时会清除。';
+			case 'field_lock': return '锁定字段';
+			case 'field_unlock': return '解锁字段';
+			case 'use_dark_theme': return '使用深色主题';
+			case 'stretch_to_fill_screen': return '拉伸以填满屏幕';
+			case 'processing_embedded_subtitles': return '正在处理内嵌字幕。请稍后再试。';
+			case 'transcript_playback_mode': return '转写播放模式';
+			case 'toggle_transcript_background': return '切换转写背景';
+			case 'seek': return '跳转';
+			case 'saved_tags': return '标签已保存。';
+			case 'structured_content_first': return ({required Object i}) => '有 ${i} 条释义不受支持，已省略。';
+			case 'structured_content_second': return '请考虑使用此词典的非结构化内容版本。';
+			case 'missing_api_key': return '未提供 API key';
+			case 'chatgpt_error': return '从 ChatGPT 获取回复时出错。';
+			case 'api_key': return 'API Key';
+			case 'subtitle_delay_set': return ({required Object ms}) => '字幕延迟已设为 ${ms} 毫秒。';
+			case 'cancel': return '取消';
+			case 'server_port_in_use': return '本地服务器端口已被占用';
+			case 'google_fonts': return 'Google Fonts';
+			case 'video_show': return '显示视频';
+			case 'video_hide': return '隐藏视频';
+			case 'subtitle_timing_show': return '显示字幕时间';
+			case 'subtitle_timing_hide': return '隐藏字幕时间';
+			case 'find_next': return '查找下一个';
+			case 'find_previous': return '查找上一个';
+			case 'shadowing_mode': return '跟读模式';
+			case 'display_settings': return '显示设置';
+			case 'cloze': return '填空';
+			case 'info_standard_update': return '新的标准配置卡片类型';
+			case 'info_standard_update_content': return '标准配置现在使用『jidoujisho Kinomoto』卡片类型。\n\n你的旧版标准配置仍会保留以保持向后兼容。';
+			case 'retrying_in.seconds': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('zh'))(n,
+				one: '${n} 秒后重试...',
+				other: '${n} 秒后重试...',
+			);
+			case 'view_replies.reply': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('zh'))(n,
+				one: '显示 ${n} 条回复',
+				other: '显示 ${n} 条回复',
+			);
+			case 'manage_duplicate_checks': return '管理重复检查';
+			case 'playback_normal': return '普通播放模式';
+			case 'playback_condensed': return '紧凑播放模式';
+			case 'playback_auto_pause': return '字幕暂停播放模式';
+			case 'player_hardware_acceleration': return '硬件加速';
+			case 'player_use_opensles': return 'OpenSL ES 音频';
+			case 'go_forward': return '前进';
+			case 'browse': return '浏览';
+			case 'bookmark': return '书签';
+			case 'add_bookmark': return '添加书签';
+			case 'add_to_reading_list': return '添加到阅读列表';
+			case 'reading_list_empty': return '阅读列表为空';
+			case 'reading_list_add_toast': return '已添加到阅读列表。';
+			case 'reading_list_remove_toast': return '已从阅读列表移除。';
+			case 'ad_block_hosts': return '广告拦截 hosts';
+			case 'error_parsing_hosts_file': return '解析 hosts 文件时出错。';
+			case 'double_tap_seek_duration': return '双击跳转时长';
+			case 'player_background_play': return '后台播放';
+			case 'loaded_from_cache': return '已从网页归档缓存加载。';
+			case 'player_show_subtitle_in_notification': return '在媒体通知中显示字幕';
+			case 'subtitles_processing': return '正在处理字幕...';
+			case 'video_unavailable': return '视频不可用';
+			case 'video_unavailable_content': return '无法获取视频流。可能存在限制，导致无法观看此视频。';
+			case 'video_file_error': return '无法加载文件';
+			case 'video_file_error_content': return '无法加载该视频文件。请确保文件存在，并位于应用可以访问的目录中。';
+			default: return null;
+		}
+	}
+}
+
+// Path: retrying_in
+class _StringsRetryingInEn {
+	_StringsRetryingInEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String seconds({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
+		one: 'Retrying in ${n} second...',
+		other: 'Retrying in ${n} seconds...',
+	);
+}
+
+// Path: view_replies
+class _StringsViewRepliesEn {
+	_StringsViewRepliesEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String reply({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
+		one: 'SHOW ${n} REPLY',
+		other: 'SHOW ${n} REPLIES',
+	);
+}
+
+// Path: retrying_in
+class _StringsRetryingInZh extends _StringsRetryingInEn {
+	_StringsRetryingInZh._(_StringsEn root) : super._(root);
+
+	// Translations
+	String seconds({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('zh'))(n,
+		one: '${n} 秒后重试...',
+		other: '${n} 秒后重试...',
+	);
+}
+
+// Path: view_replies
+class _StringsViewRepliesZh extends _StringsViewRepliesEn {
+	_StringsViewRepliesZh._(_StringsEn root) : super._(root);
+
+	// Translations
+	String reply({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('zh'))(n,
+		one: '显示 ${n} 条回复',
+		other: '显示 ${n} 条回复',
+	);
 }

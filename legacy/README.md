@@ -5,6 +5,7 @@
 
 <h3 align="center">jidoujisho</h3>
 <p align="center">A mobile video player, reader assistant, image mining workflow and card creation toolkit tailored for language learners.</p>
+<p align="center"><a href="README.zh-CN.md">简体中文说明</a></p>
 
 <p align="center" style="margin:0"><b>Latest GitHub Release:<br>
 <a href="https://github.com/arianneorpilla/jidoujisho/releases/tag/0.26.3-beta">0.26.3-beta 🇯🇵 → 🇬🇧</a></b><br>

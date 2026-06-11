@@ -728,6 +728,7 @@ class AppModel with ChangeNotifier {
     final List<Locale> availableLocales = List<Locale>.unmodifiable(
       [
         const Locale('en', 'US'),
+        const Locale('zh'),
       ],
     );
 
@@ -1188,6 +1189,7 @@ class AppModel with ChangeNotifier {
     populateDictionaryFormats();
     populateEnhancements();
     populateQuickActions();
+    setSlangLocale(appLocale.toLanguageTag());
 
     /// Get the current target language and prepare its resources for use. This
     /// will not re-run if the target language is already initialised, as
@@ -1341,8 +1343,14 @@ class AppModel with ChangeNotifier {
 
   /// Persist a new app locale in preferences.
   Future<void> setAppLocale(String localeTag) async {
-    await _preferences.put('appf_locale', localeTag);
+    await _preferences.put('app_locale', localeTag);
+    setSlangLocale(localeTag);
     notifyListeners();
+  }
+
+  /// Update the generated string lookup locale for the application.
+  void setSlangLocale(String localeTag) {
+    LocaleSettings.setLocale(localeTag == 'zh' ? AppLocale.zh : AppLocale.en);
   }
 
   /// Persist a new last selected dictionary format. This is called when the

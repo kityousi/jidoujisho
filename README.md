@@ -3,6 +3,7 @@
 </p>
 <h3 align="center">jidoujisho</h3>
 <p align="center">A full-featured immersion language learning suite for mobile.</p>
+<p align="center"><a href="README.zh-CN.md">简体中文说明</a></p>
 <p align="center">
   <a href="https://github.com/arianneorpilla/jidoujisho/releases/tag/2.9.1">
     <img src="https://img.shields.io/github/v/release/arianneorpilla/jidoujisho?include_prereleases" alt="latest release" />

@@ -4,6 +4,7 @@
 
 <h3 align="center">jidoujisho</h3>
 <p align="center">A highly versatile and modular framework enabling language-agnostic immersion learning on mobile.</p>
+<p align="center"><a href="README.zh-CN.md">简体中文说明</a></p>
 
 <p align="center" style="margin:0"><b>Latest GitHub Release:<br>
 <a href="https://github.com/arianneorpilla/jidoujisho/releases/tag/1.1">1.1</a> 🇨🇳 🇯🇵 🇰🇷</b><br>
