@@ -165,6 +165,78 @@
     "field_description_tags":
         "Organise notes in a deck with space-delimited labels.",
     "field_description_term": "Dictionary headword or phrase.",
+    "enhancement_label_audio_recorder": "Audio Recorder",
+    "enhancement_label_bing_images_search": "Bing Images Search",
+    "enhancement_label_camera": "Camera",
+    "enhancement_label_clear_field": "Clear Field",
+    "enhancement_label_crop_image": "Crop Image",
+    "enhancement_label_forvo_audio": "Forvo Audio",
+    "enhancement_label_immersion_kit": "ImmersionKit",
+    "enhancement_label_jpd101_audio": "JapanesePod101 Audio",
+    "enhancement_label_massif_example_sentences":
+        "Massif Example Sentences",
+    "enhancement_label_pick_audio": "Pick Audio",
+    "enhancement_label_open_stash": "Open Stash",
+    "enhancement_label_pick_image": "Pick Image",
+    "enhancement_label_pop_from_stash": "Pop From Stash",
+    "enhancement_label_save_tags": "Save Tags",
+    "enhancement_label_search_dictionary": "Search Dictionary",
+    "enhancement_label_sentence_picker": "Sentence Picker",
+    "enhancement_label_tatoeba_example_sentences":
+        "Tatoeba Example Sentences",
+    "enhancement_label_text_segmentation": "Text Segmentation",
+    "enhancement_description_audio_recorder":
+        "Record and use audio captured from the device microphone.",
+    "enhancement_description_bing_images_search":
+        "Search Bing for images with the current image query or the word.",
+    "enhancement_description_camera":
+        "Take a new photo to use as the new image.",
+    "enhancement_description_clear_field":
+        "Quickly empty the content of a field.",
+    "enhancement_description_crop_image": "Crop the current selected image.",
+    "enhancement_description_forvo_audio": "Get word audio from Forvo.",
+    "enhancement_description_immersion_kit":
+        "Get example sentences complete with an image and audio.",
+    "enhancement_description_jpd101_audio":
+        "Search for matching word pronunciations from JapanesePod101.",
+    "enhancement_description_massif_example_sentences":
+        "Get curated example sentences via Massif.",
+    "enhancement_description_pick_audio":
+        "Pick an audio file to use with an external picker.",
+    "enhancement_description_open_stash":
+        "View and manage previously stashed text.",
+    "enhancement_description_pick_image":
+        "Pick a new image to use with an external picker.",
+    "enhancement_description_pop_from_stash":
+        "Quickly pop the latest item in the Stash.",
+    "enhancement_description_save_tags":
+        "Persist the current text in the Tags field.",
+    "enhancement_description_search_dictionary":
+        "Search the dictionary with the content of a field.",
+    "enhancement_description_sentence_picker":
+        "Pick sentences delimited by punctuation and spacing.",
+    "enhancement_description_tatoeba_example_sentences":
+        "Pick example phrases and sentences from Tatoeba.",
+    "enhancement_description_text_segmentation":
+        "Search or select a new term from segmented text.",
+    "quick_action_label_add_to_stash": "Add To Stash",
+    "quick_action_label_card_creator": "Card Creator",
+    "quick_action_label_copy_to_clipboard": "Copy To Clipboard",
+    "quick_action_label_instant_export": "Instant Export",
+    "quick_action_label_play_audio": "Play Audio",
+    "quick_action_label_share": "Share",
+    "quick_action_description_add_to_stash":
+        "Quickly save the headword of a dictionary entry to the Stash.",
+    "quick_action_description_card_creator":
+        "Create a card with the selected dictionary entry parameters and edit before export.",
+    "quick_action_description_copy_to_clipboard":
+        "Copy the headword of a dictionary entry to the clipboard.",
+    "quick_action_description_instant_export":
+        "Export a card with the selected dictionary entry parameters.",
+    "quick_action_description_play_audio":
+        "Attempts to play audio based on the Audio enhancements. The auto is the top priority.",
+    "quick_action_description_share":
+        "Share the details of a dictionary term.",
     "model_to_map": "Card type to use for new profile",
     "mapping_name": "Profile name",
     "mapping_name_hint": "Name to assign to profile",

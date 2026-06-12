@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yuuna/creator.dart';
+import 'package:yuuna/i18n/strings.g.dart';
 import 'package:yuuna/models.dart';
 
 /// List of causes that may be of interest when executing an enhancement and
@@ -64,14 +65,103 @@ abstract class Enhancement {
   /// Get the best localisation for the label of this enhancement. If there
   /// is no localisation, the fallback is [label].
   String getLocalisedLabel(AppModel appModel) {
-    return labelLocalisation[appModel.appLocale.toLanguageTag()] ?? label;
+    return labelLocalisation[appModel.appLocale.toLanguageTag()] ??
+        _localisedLabelFromTranslations() ??
+        label;
   }
 
   /// Get the best localisation for the description of this enhancement. If
   /// there is no localisation, the fallback is [description].
   String getLocalisedDescription(AppModel appModel) {
     return descriptionLocalisation[appModel.appLocale.toLanguageTag()] ??
+        _localisedDescriptionFromTranslations() ??
         description;
+  }
+
+  String? _localisedLabelFromTranslations() {
+    switch (uniqueKey) {
+      case 'audio_recorder':
+        return t.enhancement_label_audio_recorder;
+      case 'bing_images_search':
+        return t.enhancement_label_bing_images_search;
+      case 'camera':
+        return t.enhancement_label_camera;
+      case 'clear_field':
+        return t.enhancement_label_clear_field;
+      case 'crop_image':
+        return t.enhancement_label_crop_image;
+      case 'forvo_audio':
+        return t.enhancement_label_forvo_audio;
+      case 'immersion_kit':
+        return t.enhancement_label_immersion_kit;
+      case 'jpd101_audio':
+        return t.enhancement_label_jpd101_audio;
+      case 'massif_example_sentences':
+        return t.enhancement_label_massif_example_sentences;
+      case 'pick_audio':
+        return t.enhancement_label_pick_audio;
+      case 'open_stash':
+        return t.enhancement_label_open_stash;
+      case 'pick_image':
+        return t.enhancement_label_pick_image;
+      case 'pop_from_stash':
+        return t.enhancement_label_pop_from_stash;
+      case 'save_tags':
+        return t.enhancement_label_save_tags;
+      case 'search_dictionary':
+        return t.enhancement_label_search_dictionary;
+      case 'sentence_picker':
+        return t.enhancement_label_sentence_picker;
+      case 'tatoeba_example_sentences':
+        return t.enhancement_label_tatoeba_example_sentences;
+      case 'text_segmentation':
+        return t.enhancement_label_text_segmentation;
+    }
+
+    return null;
+  }
+
+  String? _localisedDescriptionFromTranslations() {
+    switch (uniqueKey) {
+      case 'audio_recorder':
+        return t.enhancement_description_audio_recorder;
+      case 'bing_images_search':
+        return t.enhancement_description_bing_images_search;
+      case 'camera':
+        return t.enhancement_description_camera;
+      case 'clear_field':
+        return t.enhancement_description_clear_field;
+      case 'crop_image':
+        return t.enhancement_description_crop_image;
+      case 'forvo_audio':
+        return t.enhancement_description_forvo_audio;
+      case 'immersion_kit':
+        return t.enhancement_description_immersion_kit;
+      case 'jpd101_audio':
+        return t.enhancement_description_jpd101_audio;
+      case 'massif_example_sentences':
+        return t.enhancement_description_massif_example_sentences;
+      case 'pick_audio':
+        return t.enhancement_description_pick_audio;
+      case 'open_stash':
+        return t.enhancement_description_open_stash;
+      case 'pick_image':
+        return t.enhancement_description_pick_image;
+      case 'pop_from_stash':
+        return t.enhancement_description_pop_from_stash;
+      case 'save_tags':
+        return t.enhancement_description_save_tags;
+      case 'search_dictionary':
+        return t.enhancement_description_search_dictionary;
+      case 'sentence_picker':
+        return t.enhancement_description_sentence_picker;
+      case 'tatoeba_example_sentences':
+        return t.enhancement_description_tatoeba_example_sentences;
+      case 'text_segmentation':
+        return t.enhancement_description_text_segmentation;
+    }
+
+    return null;
   }
 
   /// Whether or not [initialise] has been called for this enhancement.
