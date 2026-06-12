@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yuuna/dictionary.dart';
+import 'package:yuuna/i18n/strings.g.dart';
 import 'package:yuuna/models.dart';
 
 /// An entity that represents a broad characteristic of an item being
@@ -52,14 +53,107 @@ abstract class Field {
   /// Get the best localisation for the label of this enhancement. If there
   /// is no localisation, the fallback is [label].
   String getLocalisedLabel(AppModel appModel) {
-    return labelLocalisation[appModel.appLocale.toLanguageTag()] ?? label;
+    return labelLocalisation[appModel.appLocale.toLanguageTag()] ??
+        _localisedLabelFromTranslations() ??
+        label;
   }
 
   /// Get the best localisation for the description of this enhancement. If
   /// there is no localisation, the fallback is [description].
   String getLocalisedDescription(AppModel appModel) {
     return descriptionLocalisation[appModel.appLocale.toLanguageTag()] ??
+        _localisedDescriptionFromTranslations() ??
         description;
+  }
+
+  String? _localisedLabelFromTranslations() {
+    switch (uniqueKey) {
+      case 'audio':
+        return t.field_label_audio;
+      case 'audio_sentence':
+        return t.field_label_audio_sentence;
+      case 'cloze_after':
+        return t.field_label_cloze_after;
+      case 'cloze_before':
+        return t.field_label_cloze_before;
+      case 'cloze_inside':
+        return t.field_label_cloze_inside;
+      case 'collapsed_meaning':
+        return t.field_label_collapsed_meaning;
+      case 'context':
+        return t.field_label_context;
+      case 'expanded_meaning':
+        return t.field_label_expanded_meaning;
+      case 'frequency':
+        return t.field_label_frequency;
+      case 'furigana':
+        return t.field_label_furigana;
+      case 'hidden_meaning':
+        return t.field_label_hidden_meaning;
+      case 'image':
+        return t.field_label_image;
+      case 'meaning':
+        return t.field_label_meaning;
+      case 'notes':
+        return t.field_label_notes;
+      case 'pitch_accent':
+        return t.field_label_pitch_accent;
+      case 'reading':
+        return t.field_label_reading;
+      case 'sentence':
+        return t.field_label_sentence;
+      case 'tags':
+        return t.field_label_tags;
+      case 'term':
+        return t.field_label_term;
+    }
+
+    return null;
+  }
+
+  String? _localisedDescriptionFromTranslations() {
+    switch (uniqueKey) {
+      case 'audio':
+        return t.field_description_audio;
+      case 'audio_sentence':
+        return t.field_description_audio_sentence;
+      case 'cloze_after':
+        return t.field_description_cloze_after;
+      case 'cloze_before':
+        return t.field_description_cloze_before;
+      case 'cloze_inside':
+        return t.field_description_cloze_inside;
+      case 'collapsed_meaning':
+        return t.field_description_collapsed_meaning;
+      case 'context':
+        return t.field_description_context;
+      case 'expanded_meaning':
+        return t.field_description_expanded_meaning;
+      case 'frequency':
+        return t.field_description_frequency;
+      case 'furigana':
+        return t.field_description_furigana;
+      case 'hidden_meaning':
+        return t.field_description_hidden_meaning;
+      case 'image':
+        return t.field_description_image;
+      case 'meaning':
+        return t.field_description_meaning;
+      case 'notes':
+        return t.field_description_notes;
+      case 'pitch_accent':
+        return t.field_description_pitch_accent;
+      case 'reading':
+        return t.field_description_reading;
+      case 'sentence':
+        return t.field_description_sentence;
+      case 'tags':
+        return t.field_description_tags;
+      case 'term':
+        return t.field_description_term;
+    }
+
+    return null;
   }
 
   /// Return the value that this field must have upon opening the Card Creator.

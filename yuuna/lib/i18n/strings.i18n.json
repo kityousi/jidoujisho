@@ -114,6 +114,57 @@
     "import_file_extension_invalid":
         "This format expects files with the following extensions: $extensions",
     "field_label_empty": "Empty",
+    "field_label_audio": "Term Audio",
+    "field_label_audio_sentence": "Sentence Audio",
+    "field_label_cloze_after": "Cloze After",
+    "field_label_cloze_before": "Cloze Before",
+    "field_label_cloze_inside": "Cloze Inside",
+    "field_label_collapsed_meaning": "Collapsed Meaning",
+    "field_label_context": "Context",
+    "field_label_expanded_meaning": "Expanded Meaning",
+    "field_label_frequency": "Frequency",
+    "field_label_furigana": "Furigana",
+    "field_label_hidden_meaning": "Hidden Meaning",
+    "field_label_image": "Image",
+    "field_label_meaning": "Meaning",
+    "field_label_notes": "Notes",
+    "field_label_pitch_accent": "Pitch Accent",
+    "field_label_reading": "Reading",
+    "field_label_sentence": "Sentence",
+    "field_label_tags": "Tags",
+    "field_label_term": "Term",
+    "field_description_audio":
+        "Audio pertaining to the term. Text field can be used to enter search terms for audio sources.",
+    "field_description_audio_sentence":
+        "Audio pertaining to the sentence. Text field can be used to enter search terms for audio sources.",
+    "field_description_cloze_after":
+        "Text after highlighted text in a sentence. Empty if nothing is highlighted.",
+    "field_description_cloze_before":
+        "Text before highlighted text in a sentence. Empty if nothing is highlighted.",
+    "field_description_cloze_inside": "Highlighted text in a sentence.",
+    "field_description_collapsed_meaning":
+        "Dictionary definitions only from collapsed dictionaries.",
+    "field_description_context": "Name of current source media.",
+    "field_description_expanded_meaning":
+        "Dictionary definitions only from expanded dictionaries.",
+    "field_description_frequency":
+        "Adds frequency of headword for sorting purposes, calculated using the harmonic mean.",
+    "field_description_furigana": "Pre-fills text to export for Furigana.",
+    "field_description_hidden_meaning":
+        "Dictionary definitions only from hidden dictionaries.",
+    "field_description_image":
+        "Visual supplement. Text field can be used to enter search terms for image sources.",
+    "field_description_meaning": "All dictionary definitions of a term.",
+    "field_description_notes":
+        "Supplementary information or personal observations.",
+    "field_description_pitch_accent":
+        "Pre-fills text to export for pitch accent diagrams.",
+    "field_description_reading": "Pronunciation or speech pattern.",
+    "field_description_sentence":
+        "Subtitles, book excerpts and other contextual information.",
+    "field_description_tags":
+        "Organise notes in a deck with space-delimited labels.",
+    "field_description_term": "Dictionary headword or phrase.",
     "model_to_map": "Card type to use for new profile",
     "mapping_name": "Profile name",
     "mapping_name_hint": "Name to assign to profile",

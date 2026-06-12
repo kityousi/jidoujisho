@@ -575,7 +575,7 @@ class _ProfilesDialogPageState extends BasePageState<ProfilesDialogPage>
                       if (field == null) {
                         return t.field_label_empty;
                       } else {
-                        return field.label;
+                        return field.getLocalisedLabel(appModel);
                       }
                     },
                     onChanged: (field) {
